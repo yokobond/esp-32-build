@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 
 # Install build dependencies (and vim + picocom for editing/debugging)
 RUN apt-get -qq update \
-    && apt-get install -y git wget make libncurses-dev flex bison gperf python python-serial vim picocom \
+    && apt-get install -y git wget make zip libncurses-dev flex bison gperf python python-serial vim picocom \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
